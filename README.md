@@ -5,3 +5,5 @@
 - 2020/12/24 - Day 3
   - Finished Git
   - Started Javascript
+
+#2020/12/25, 26, 27 - Practive missed. Promise to practise atleast 1 hour a day. No matter what + Real focus on ToDo
