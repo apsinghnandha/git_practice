@@ -14,7 +14,7 @@
   - Breathing Class
 - 2021/01/02- Day 5
 - 2021/01/03- Day 6
-  - JavaScript Part 1 - Finished
+  - JavaScript Part 1 - Finished - (12%)
 - 2021/01/04- Day 7
   - JavaScript Part 2 - Started
   - Yoga Class 17
