@@ -19,3 +19,9 @@
   - JavaScript Part 2 - Started
   - Yoga Class 17
   - Breathing Class
+
+- 2021/01/14 - Moved to Canada
+- 2021/01/17 - Settled down :)
+  - Sorted yoga, finance, food etc
+  - Back on programming
+  - Started Forex trading cource
