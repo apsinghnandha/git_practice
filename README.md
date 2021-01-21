@@ -16,6 +16,7 @@
 - 2021/01/03- Day 6
   - JavaScript Part 1 - Finished - (12%)
 - 2021/01/04- Day 7
+
   - JavaScript Part 2 - Started
   - Yoga Class 17
   - Breathing Class
@@ -25,3 +26,13 @@
   - Sorted yoga, finance, food etc
   - Back on programming
   - Started Forex trading cource
+- 2021/01/18
+  - Continue JS - Day 8
+- 2021/01/19
+  - Continue Js - Day 9
+  - Yoga Day 18
+- 2021/01/20
+  - Continue Js - Day 10
+  - Yoga Day 19
+- 2021/01/21
+  - Finished Advanced Objects - Day 11
