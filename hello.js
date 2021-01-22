@@ -25,7 +25,7 @@ if (username) {
 console.log(defaultName);
 */
 
-/*
+/* //Meal Maker
 const menu = {
   _courses: {
     appetizers: [],
@@ -91,7 +91,8 @@ menu.getRandomDishFromCourse("appetizers");
 menu.getRandomDishFromCourse("appetizers");
 console.log(menu.generateRandomMeal());
 */
-/*
+
+/* //Team Stats
 const team = {
   //object in array pg 119
   _players: [
@@ -133,3 +134,5 @@ team.addGame('China',12,76);
 console.log(team.games);
 */
 
+// const a = document.getElementById("para");
+// a.textContent =
