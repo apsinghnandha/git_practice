@@ -645,3 +645,228 @@ console.log(team.games);
 // console.log("Movie Avg rating: " + speed.getAverageRating());
 
 //School catalogue
+// class School {
+//   constructor(name, level, numberOfStudents) {
+//     this._name = name;
+//     this._level = level;
+//     this._numberOfStudents = numberOfStudents;
+//   }
+//   get name() {
+//     return this._name;
+//   }
+//   get level() {
+//     return this._level;
+//   }
+//   get numberOfStudents() {
+//     return this._numberOfStudents;
+//   }
+//   //set no of students
+//   set numberOfStudents(number) {
+//     if (typeof number === "number") {
+//       this._numberOfStudents = number;
+//     } else {
+//       console.log("Invalid input: numberOfStudents must be set to a Number.");
+//     }
+//   }
+//   quickFacts() {
+//     console.log(
+//       `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`
+//     );
+//   }
+//   static pickSubstituteTeacher(substituteTeachers) {
+//     let x = Math.floor(Math.random() * substituteTeachers.length);
+//     return substituteTeachers[x];
+//   }
+// }
+
+// class PrimarySchool extends School {
+//   constructor(name, numberOfStudents, pickupPolicy) {
+//     super(name, "primary", numberOfStudents);
+//     this._pickupPolicy = pickupPolicy;
+//   }
+
+//   get pickupPolicy() {
+//     return this._pickupPolicy;
+//   }
+// }
+
+// class MiddleSchool extends School {
+//   constructor(name, numberOfStudents) {
+//     super(name, "middle", numberOfStudents);
+//   }
+// }
+
+// class HighSchool extends School {
+//   constructor(name, numberOfStudents, sportsTeam) {
+//     super(name, "high", numberOfStudents);
+//     this._sportsTeam = sportsTeam;
+//   }
+
+//   get sportsTeam() {
+//     return this._sportsTeam;
+//   }
+// }
+
+// //add object of PrimarySchool
+// const lorraineHansbury = new PrimarySchool(
+//   "Lorraine Hansbury",
+//   514,
+//   "Students must be picked up by a parent, guardian, or a family member over the age of 13."
+// );
+// lorraineHansbury.quickFacts();
+
+// //set substitute teachers
+// console.log(
+//   "Substitute Teacher: " +
+//     PrimarySchool.pickSubstituteTeacher([
+//       "Jamal Crawford",
+//       "Lou Williams",
+//       "J. R. Smith",
+//       "James Harden",
+//       "Jason Terry",
+//       "Manu Ginobli",
+//     ])
+// );
+
+// //add object of HighSchool
+// const alSmith = new HighSchool("Al E. Smith", 415, [
+//   "Baseball",
+//   "Basketball",
+//   "Volleyball",
+//   "Track and Field",
+// ]);
+// console.log(alSmith.sportsTeam);
+
+// import {
+//   availableAirplanes,
+//   flightRequirements,
+//   meetsStaffRequirements,
+// } from "./module/airplane.mjs";
+
+// function displayFuelCapacity() {
+//   availableAirplanes.forEach((x) =>
+//     console.log("Fuel Capacity of " + x.name + ":" + x.fuelCapacity)
+//   );
+// }
+
+// // function displayStaffStatus(){
+// //   availableAirplanes.forEach(function(element) {
+// //    console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+// //   });
+// // }
+
+// function displayStaffStatus() {
+//   availableAirplanes.forEach((x) =>
+//     console.log(
+//       `${x.name} meets staff requirements: ${meetsStaffRequirements(
+//         x.availableStaff,
+//         flightRequirements.requiredStaff
+//       )}`
+//     )
+//   );
+// }
+
+// //calling function
+// displayFuelCapacity();
+// displayStaffStatus();
+
+//Practice Export Import
+
+// //ES5 METHOD 1
+// const MessageMixer = require("./module/messageMixer.mjs");
+// // prettier-ignore
+// function displayMessage() {
+//     console.log(MessageMixer.countCharacter("What is the color of the sky?", "t"));
+//     console.log(MessageMixer.capitalizeFirstCharacterOfWords("What is the color of the sky?"));
+//     console.log(MessageMixer.reverseWord("What is the color of the sky?"));
+//     console.log(MessageMixer.reverseAllWords("What is the color of the sky?"));
+//     console.log(MessageMixer.replaceFirstOccurence("What is the color of the sky?","sky","water"));
+//     console.log(MessageMixer.encode("What is the color of the sky?"));
+//     console.log(MessageMixer.palindrome("What is the color of the sky?"));
+//     console.log(MessageMixer.pigLatin("What is the color of the sky?",'_'));
+//   }
+// displayMessage();
+
+// //ES6 METHOD 1 - import, export default
+// import MessageMixer from "./module/messageMixer.mjs";
+// // prettier-ignore
+// function displayMessage() {
+//   console.log(MessageMixer.countCharacter("What is the color of the sky?", "t"));
+//   console.log(MessageMixer.capitalizeFirstCharacterOfWords("What is the color of the sky?"));
+//   console.log(MessageMixer.reverseWord("What is the color of the sky?"));
+//   console.log(MessageMixer.reverseAllWords("What is the color of the sky?"));
+//   console.log(MessageMixer.replaceFirstOccurence("What is the color of the sky?","sky","water"));
+//   console.log(MessageMixer.encode("What is the color of the sky?"));
+//   console.log(MessageMixer.palindrome("What is the color of the sky?"));
+//   console.log(MessageMixer.pigLatin("What is the color of the sky?",'_'));
+// }
+// displayMessage();
+
+// //ES6 METHOD 2 - name import, name export
+// import { countCharacter, capitalizeFirstCharacterOfWords, reverseWord, reverseAllWords, replaceFirstOccurence, encode, palindrome, pigLatin } from "./module/messageMixer.mjs";
+// // prettier-ignore
+// function displayMessage() {
+//     console.log(countCharacter("What is the color of the sky?", "t"));
+//     console.log(capitalizeFirstCharacterOfWords("What is the color of the sky?"));
+//     console.log(reverseWord("What is the color of the sky?"));
+//     console.log(reverseAllWords("What is the color of the sky?"));
+//     console.log(replaceFirstOccurence("What is the color of the sky?","sky","water"));
+//     console.log(encode("What is the color of the sky?"));
+//     console.log(palindrome("What is the color of the sky?"));
+//     console.log(pigLatin("What is the color of the sky?",'_'));
+//   }
+// displayMessage();
+
+// //Workaround practice program
+// import {
+//   Employee,
+//   cadre as getCadre,
+//   tax as calculateTax,
+//   benefits as getBenefits,
+//   bonus as calculateBonus,
+//   reimbursement as reimbursementEligibility,
+// } from "./module/workAround.mjs";
+
+// // prettier-ignore
+// function getEmployeeInformation(inputSalary) {
+//   Employee.salary = inputSalary;
+//   console.log("Cadre: " + getCadre());
+//   console.log("Tax: " + calculateTax());
+//   console.log("Benefits: " + getBenefits());
+//   console.log("Bonus: " + calculateBonus());
+//   console.log("Reimbursement Eligibility: " + reimbursementEligibility() + "\n");
+// }
+
+// getEmployeeInformation(10000);
+// getEmployeeInformation(50000);
+// getEmployeeInformation(100000);
+
+
+// const inventory = {
+//   sunglasses: 1900,
+//   pants: 1088,
+//   bags: 1344
+// };
+
+// // Write your code below:
+// const myExecutor = (resolve, reject) => {
+//   if (inventory.sunglasses>0) {
+//       resolve('Sunglasses order processed.');
+//   } else {
+//       reject( 'That item is sold out.'); 
+//   }
+// }
+// const orderSunglasses = () => new Promise(myExecutor);
+// const orderPromise = orderSunglasses();
+// console.log(orderPromise);
+
+
+
+
+
+
+
+
+
+
+
