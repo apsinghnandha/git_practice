@@ -35,4 +35,9 @@
   - Continue Js - Day 10
   - Yoga Day 19
 - 2021/01/21
+
   - Finished Advanced Objects - Day 11
+
+- 2021/03/12
+  - Coming out of procrastination and continue working on Js + now work on a project simultaneously.
+  - 20% course done.
