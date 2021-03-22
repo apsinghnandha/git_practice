@@ -1,11 +1,11 @@
-/* Temperature Converter
+/* //# Temperature Converter
 //Set kelvin
 const kelvin = 300;
 
-//convert to celsius
+//# convert to celsius
 const celsius = kelvin - 273;
 
-//convert to fehrenheight
+//# convert to fehrenheight
 const fehrenheight = Math.floor(celsius*(9/5)+32);
 
 console.log(`Kelvin = ${kelvin}`);
@@ -13,7 +13,7 @@ console.log(`Celsius = ${celsius}`);
 console.log(`Fehrenheit = ${fehrenheight}`);
 */
 
-/*// Tests for Truthy & Falsy
+/*//# Tests for Truthy & Falsy
 //Takes value from username or if empty inputs default value
 let username='ap';
 let defaultName = username || 'Stranger';
@@ -25,7 +25,7 @@ if (username) {
 console.log(defaultName);
 */
 
-/* //Meal Maker
+/* //# Meal Maker
 const menu = {
   _courses: {
     appetizers: [],
@@ -185,7 +185,7 @@ console.log(team.games);
 //   );
 // }
 
-// //rock paper scissor
+// //# rock paper scissor
 // const userInput = (choice) => {
 //   if (choice === "rock" || choice === "scissors" || choice === "paper") {
 //     return choice;
@@ -222,7 +222,7 @@ console.log(team.games);
 
 // winner();
 
-// //mutual Firends
+// //# mutual Firends
 // // Write your code below
 // const bobsFollowers = ['a','b','c','d'];
 // const tinasFollowers= ['c','d','e'];
@@ -238,7 +238,7 @@ console.log(team.games);
 
 // // console.log(mutualFollowers);
 
-// //Whale Talk
+// //# Whale Talk
 // const input = "turpentine and turtles";
 // const vowels = ["a", "e", "i", "o", "u"];
 // const resultArray = [];
@@ -318,7 +318,7 @@ console.log(team.games);
 // //7 join array
 // console.log(betterWords.join(" "));
 
-//Code chanllenge immediate javascript
+//# Code chanllenge immediate javascript
 //1
 // const sentence = ["sense.", "make", "all", "will", "This"];
 // const reverseArray = (arr) => {
@@ -481,7 +481,7 @@ console.log(team.games);
 // console.log(dogFactory("Joe", "Pug", 27));
 // console.log()
 
-//factorial
+//# factorial
 // const factorial = (num) => {
 //   let x = 1;
 //   while (num > 0) {
@@ -492,7 +492,7 @@ console.log(team.games);
 // };
 // factorial(1);
 
-//letter distance in a word
+//# letter distance in a word
 // const subLength = (str, letter) => {
 //   var letter_Count = 0;
 //   for (var position = 0; position < str.length; position++) {
@@ -632,7 +632,7 @@ console.log(team.games);
 // historyOfEverything.addRating(5);
 // console.log("Book Avg rating: " + historyOfEverything.getAverageRating());
 
-// //20 new object
+// //# 20 new object
 // const speed = new Movie("Jan de Bont", "Speed", 116);
 // //change status
 // speed.toggleCheckOutStatus();
@@ -770,8 +770,7 @@ console.log(team.games);
 // displayFuelCapacity();
 // displayStaffStatus();
 
-//Practice Export Import
-
+//# Practice Export Import
 // //ES5 METHOD 1
 // const MessageMixer = require("./module/messageMixer.mjs");
 // // prettier-ignore
@@ -817,7 +816,7 @@ console.log(team.games);
 //   }
 // displayMessage();
 
-// //Workaround practice program
+// //# Workaround practice program
 // import {
 //   Employee,
 //   cadre as getCadre,
@@ -841,33 +840,33 @@ console.log(team.games);
 // getEmployeeInformation(50000);
 // getEmployeeInformation(100000);
 
-
+// //#  Promise Object
 // const inventory = {
 //   sunglasses: 1900,
 //   pants: 1088,
-//   bags: 1344
+//   bags: 1344,
 // };
 
-/* 
-//! Write your code below:
-const myExecutor = (resolve, reject) => {
-  if (inventory.sunglasses>0) {
-      resolve('Sunglasses order processed.');
-  } else {
-      reject( 'That item is sold out.'); 
-  }
-}
-const orderSunglasses = () => new Promise(myExecutor);
-const orderPromise = orderSunglasses();
-console.log(orderPromise);
+// const myExecutor = (resolve, reject) => {
+//   if (inventory.sunglasses > 0) {
+//     resolve("Sunglasses order processed.");
+//   } else {
+//     reject("That item is sold out");
+//   }
+// };
 
- */
+// const orderPromise = new Promise(myExecutor);
+// console.log(orderPromise);
 
+// //# setTimeOut
+// const returnPromiseFunction = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("I resolved!");
+//     }, 1000);
+//   });
+// };
 
-
-
-
-
-
-
+// const prom = returnPromiseFunction();
+// console.log(prom);
 
