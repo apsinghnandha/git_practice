@@ -1,0 +1,24 @@
+{
+  "name": "git_practice",
+  "version": "1.0.0",
+  "description": "- 2020/12/22 - Day 1 - 2020/12/23 - Day 2 - 2020/12/24 - Day 3   - Finished Git   - Started JavaScript",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node pMistoryOrganism.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apsinghnandha/git_practice.git"
+  },
+  "keywords": [],
+  "author": "Ap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apsinghnandha/git_practice/issues"
+  },
+  "homepage": "https://github.com/apsinghnandha/git_practice#readme",
+  "dependencies": {
+    "lodash": "*"
+  }
+}
